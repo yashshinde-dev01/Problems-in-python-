@@ -1,0 +1,27 @@
+#  Q1.take a three integer from keyboard and calculate its averange 
+# valid'n--> no. should not be -ve,zero,string
+
+
+def fun(msg):
+    value=input(msg);
+    if not value:
+        print("Empty not allowed");
+        return None;
+
+    if not value.isdigit():
+        print("Only positive allowed");
+        return None;
+    num=int(value);
+    if num==0:
+        print("zero is not allowed")
+        return None;
+    return num;
+
+
+a=fun("Enter num one");
+b=fun("Enter num two");
+c=fun("Enter num three");
+if a is not None and b is not None and c is not None:
+    avg=(a+b+c)/3;
+    print("Average of a,b,c is :",avg);
+      
